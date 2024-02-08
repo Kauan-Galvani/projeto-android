@@ -9,7 +9,7 @@
 </head>
 
 <style>
-    @charset "UTF-8";
+@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
@@ -61,7 +61,7 @@ nav {
 }
 
 nav > a {
-  color: white;
+  color: var(--cor2);
   padding: 10px;
   text-decoration: none;
   border-radius: 5px;
@@ -80,6 +80,7 @@ header > h1 {
   margin-bottom: 20px;
   font-size: 3em;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.513);
+  font-weight: normal;
 }
 
 header > p {
@@ -90,6 +91,7 @@ header > p {
   margin: auto;
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 20px;
   
 }
 
@@ -134,6 +136,7 @@ main img.pq {
 main h1 {
   color: var(--cor6);
   font-family: var(--font-android);
+  font-weight: normal;
 }
 
 footer {
@@ -173,6 +176,47 @@ main h2 {
   font-size: 1.3em;
   background-image: linear-gradient(to right, var(--cor2), transparent);
   text-indent: 8px;
+  font-weight: normal;
+}
+
+aside {
+  background-color: var(--cor1);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.452);
+}
+
+aside > ul {
+  list-style-position: inside;
+  columns: 2;  
+}
+
+aside h3 {
+  background-color: var(--cor5);
+  color: white;
+  padding: 10px;
+  margin: -10px -10px 0px -10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+a.externo::after {
+  content: '\1F517';
+}
+
+div.video {
+  background-color: #1a5c37;
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+  position: relative;
+  padding-bottom: 59%;
+}
+
+.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
 }
 </style>
 
